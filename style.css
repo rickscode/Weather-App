@@ -1,0 +1,114 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+
+body 
+{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.main
+{
+    background-image: url("media/background.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.weather-component
+{
+    position: absolute;
+    top: 21%;
+    width: 100%;
+    margin-left: 10%;
+    color: white;
+}
+
+.weather-date
+{
+    font-family: 'Lato', sans-serif;
+    font-size: 1.2rem;
+}
+.weather-description
+{
+    font-family: 'Lato', sans-serif;
+    font-size: 4rem;
+}
+
+.weather-location
+{
+    font-family: 'Lato', sans-serif;
+    font-size: 2rem;
+}
+
+.weather-degrees
+{
+    position: relative;
+    font-family: 'Nunito', sans-serif;
+    font-size: 10rem;
+    font-weight: 600;
+ 
+}
+
+.weather-degrees::after 
+{
+    position: absolute;
+    content: '\0B0 C';
+    font-size: 2rem;
+    top: 2rem;
+    left: 11rem;
+}
+
+.location-search-box
+{
+    margin-top: 5rem;
+    position: relative;
+    margin: 2.5rem 3.5rem 0 0;
+    
+}
+
+.location-search-input
+{   
+
+    width: 15rem;
+    height: 100%;
+    background: rgba(173, 165, 165, 0.2);
+    padding: 0.5rem 0 0.3rem 4rem;
+    color: #ffffff;
+    font-size: 1.2rem;
+    border-radius: 0.5rem;
+    border: none;
+    outline: none;
+}
+
+.location-search-input::placeholder
+{   
+    
+    color: #ffffff;
+}
+
+.submit-search
+{
+    position: relative;
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: larger;
+    right: 2rem;
+    bottom: 0.1rem;
+}
+
+.fa-search 
+{
+    color: #f3f3f3;
+    font-size: 1.8rem;
+}
