@@ -67,6 +67,7 @@ body
     left: 11rem;
 }
 
+
 .location-search-box
 {
     margin-top: 5rem;
@@ -97,18 +98,24 @@ body
 
 .submit-search
 {
-    position: relative;
+    position: absolute;
     background-color: rgba(0, 0, 0, 0);
     border: none;
     outline: none;
     cursor: pointer;
     font-size: larger;
-    right: 2rem;
-    bottom: 0.1rem;
+    left: 17rem;
+    bottom: 0.4rem;
 }
 
 .fa-search 
 {
     color: #f3f3f3;
     font-size: 1.8rem;
+}
+
+img
+{
+    height: 5rem;
+    width: 5rem;
 }
