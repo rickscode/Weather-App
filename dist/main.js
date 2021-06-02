@@ -1,0 +1,1 @@
+!async function(){const o=await fetch("https://api.openweathermap.org/data/2.5/weather?q=lodon&units=metric&appid=1f2ee12c8f8994c48f986ab8a9acd1d7",{mode:"cors"});if(404===o.status)console.log("error");else{const a=await o.json();console.log(a)}}();
