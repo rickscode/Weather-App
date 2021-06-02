@@ -10,7 +10,42 @@ async function getWeather(location) {
  } else {
   const data = await response.json();
   console.log(data);
+  // main weather status
+  console.log(data.weather[0].main);
+  // weather description 
+  console.log(data.weather[0].description);
+  // location
+  console.log(data.name);
+  // tempature
+  console.log(data.main.temp);
+
+  displayWeather(data)
  }
+}
+
+// display weather
+function displayWeather(data) {
+  let weatherStatus = data.weather[0].main;
+  let weatherDescription = data.weather[0].description
+  let location = data.name;
+  let tempature = data.main.temp;
+  const {icon} = data.weather[0];
+
+  let weatherSummary = document.getElementById('weather-description');
+  weatherSummary.textContent = weatherDescription;
+
+  let weatherType = document.getElementById('weather-type');
+  weatherType.textContent = weatherStatus;
+
+  let weatherLocation = document.getElementById('weather-location');
+  weatherLocation.textContent = location;
+
+  let weatherTempature = document.getElementById('weather-degrees');
+  weatherTempature.textContent = Math.round(tempature);
+
+  let locationIcon = document.querySelector('.weather-icon');
+  locationIcon.innerHTML = `<img src="icons/${icon}.png">;`
+
 }
  
 
