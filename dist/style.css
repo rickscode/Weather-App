@@ -28,7 +28,7 @@ body
 .weather-component
 {
     position: absolute;
-    top: 21%;
+    top: 25%;
     width: 100%;
     margin-left: 10%;
     color: white;
@@ -74,7 +74,6 @@ body
 {
     
     position: absolute;
-    
     margin-top: 2.5rem;
     margin-left: 10%;
     
