@@ -34,11 +34,11 @@ function displayWeather(data) {
   let weatherSummary = document.getElementById('weather-description');
   weatherSummary.textContent = weatherDescription;
 
-  let weatherType = document.getElementById('weather-type');
-  weatherType.textContent = weatherStatus;
+  // let weatherType = document.getElementById('weather-type');
+  // weatherType.textContent = weatherStatus;
 
   let weatherLocation = document.getElementById('weather-location');
-  weatherLocation.textContent = location;
+  weatherLocation.textContent = "in" + " " + location;
 
   let weatherTempature = document.getElementById('weather-degrees');
   weatherTempature.textContent = Math.round(tempature);
