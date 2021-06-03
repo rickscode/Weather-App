@@ -9,16 +9,6 @@ async function getWeather(location) {
    console.log('error');
  } else {
   const data = await response.json();
-  console.log(data);
-  // main weather status
-  console.log(data.weather[0].main);
-  // weather description 
-  console.log(data.weather[0].description);
-  // location
-  console.log(data.name);
-  // tempature
-  console.log(data.main.temp);
-
   displayWeather(data)
  }
 }
@@ -33,9 +23,6 @@ function displayWeather(data) {
 
   let weatherSummary = document.getElementById('weather-description');
   weatherSummary.textContent = weatherDescription;
-
-  // let weatherType = document.getElementById('weather-type');
-  // weatherType.textContent = weatherStatus;
 
   let weatherLocation = document.getElementById('weather-location');
   weatherLocation.textContent = "in" + " " + location;
