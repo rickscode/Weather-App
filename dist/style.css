@@ -76,17 +76,17 @@ body
     position: absolute;
     /* margin: 5rem 3.5rem 0 0; */
     margin-top: 3rem;
-    margin-left: 3rem;
+    margin-left: 10%;
     
 }
 
 .location-search-input
 {   
 
-    width: 15rem;
+    width: 11rem;
     height: 100%;
     background: rgba(173, 165, 165, 0.2);
-    padding: 0.5rem 0.5rem 0.3rem 3rem;
+    padding: 0.5rem 0.5rem 0.3rem 1rem;
     color: #ffffff;
     font-size: 1.2rem;
     border-radius: 0.5rem;
@@ -109,14 +109,15 @@ body
     outline: none;
     cursor: pointer;
     font-size: larger;
-    left: 17rem;
+    left: 11rem;
     bottom: 0.4rem;
 }
 
 .fa-search 
 {
     color: #f3f3f3;
-    font-size: 1.8rem;
+    font-size: 1.5rem;
+    
 }
 
 img
